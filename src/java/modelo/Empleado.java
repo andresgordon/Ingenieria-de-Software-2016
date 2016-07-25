@@ -1,102 +1,44 @@
 package modelo;
 
-
-/**
- * @version 1.0
- * @created 14-Jul.-2016 8:20:29 p. m.
- */
+ 
 public class Empleado {
+    private int codigo;
+    private String nombre;
+    private double salario;
+    public Empleado() {
+    }
+    public Empleado(int codigo, String nombre, double salario) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.salario = salario;
+    }
+    @Override
+    public String toString() {
+        return nombre.toUpperCase();
+    }
 
-	private String idEmpleado;
-	private String nombreEmpleado;
-	private int estado;
-	private String correo;
-	private String usuario;
-	private String password;
-	public Actividad m_Actividad;
-	public Cargo m_Cargo;
+    public int getCodigo() {
+        return codigo;
+    }
 
-	public Empleado(){
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
 
-	}
+    public String getNombre() {
+        return nombre;
+    }
 
-        public Empleado(String idEmpleado, String nombreEmpleado, int estado, String correo, String usuario, String password, Actividad m_Actividad, Cargo m_Cargo) {
-            this.idEmpleado = idEmpleado;
-            this.nombreEmpleado = nombreEmpleado;
-            this.estado = estado;
-            this.correo = correo;
-            this.usuario = usuario;
-            this.password = password;
-            this.m_Actividad = m_Actividad;
-            this.m_Cargo = m_Cargo;
-        }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
-        public String getIdEmpleado() {
-            return idEmpleado;
-        }
+    public double getSalario() {
+        return salario;
+    }
 
-        public void setIdEmpleado(String idEmpleado) {
-            this.idEmpleado = idEmpleado;
-        }
-
-        public String getNombreEmpleado() {
-            return nombreEmpleado;
-        }
-
-        public void setNombreEmpleado(String nombreEmpleado) {
-            this.nombreEmpleado = nombreEmpleado;
-        }
-
-        public int getEstado() {
-            return estado;
-        }
-
-        public void setEstado(int estado) {
-            this.estado = estado;
-        }
-
-        public String getCorreo() {
-            return correo;
-        }
-
-        public void setCorreo(String correo) {
-            this.correo = correo;
-        }
-
-        public String getUsuario() {
-            return usuario;
-        }
-
-        public void setUsuario(String usuario) {
-            this.usuario = usuario;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
-
-        public Actividad getM_Actividad() {
-            return m_Actividad;
-        }
-
-        public void setM_Actividad(Actividad m_Actividad) {
-            this.m_Actividad = m_Actividad;
-        }
-
-        public Cargo getM_Cargo() {
-            return m_Cargo;
-        }
-
-        public void setM_Cargo(Cargo m_Cargo) {
-            this.m_Cargo = m_Cargo;
-        }
-
-	public void finalize() throws Throwable {
-
-	}
+    public void setSalario(double salario) {
+        this.salario = salario;
+    }
 
 }

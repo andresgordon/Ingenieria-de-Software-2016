@@ -4,10 +4,8 @@ import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
-//import org.postgresql.Driver;
 
-
-//@author Henry Joe Wong Urquiza
+//@author Andrés Guillermo Gordon
 
 public class Conexion {
     //La url con la cual nos conectariamos a la base de datos

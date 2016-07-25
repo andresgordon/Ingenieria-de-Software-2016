@@ -1,66 +1,43 @@
 package modelo;
 
+import java.sql.Timestamp;
 
-/**
- * @version 1.0
- * @created 14-Jul.-2016 8:19:48 p. m.
- */
 public class Actividad {
 
-	private String id_actividad;
-	private String nombre_actividad;
-	private int estado;
-	private int cantidad_horas;
+    private int codigo;
+    private String nombre;
+    private Timestamp fecha;
 
-	public Actividad(){
-	}
-
-    public Actividad(String id_actividad, String nombre_actividad, int estado, int cantidad_horas) {
-        this.id_actividad = id_actividad;
-        this.nombre_actividad = nombre_actividad;
-        this.estado = estado;
-        this.cantidad_horas = cantidad_horas;
+    public Actividad() {
     }
 
-    public String getId_actividad() {
-        return id_actividad;
+    public Actividad(int codigo, String nombre, Timestamp fecha) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.fecha = fecha;
     }
 
-    public void setId_actividad(String id_actividad) {
-        this.id_actividad = id_actividad;
+    public String getNombre() {
+        return nombre;
     }
 
-    public String getNombre_actividad() {
-        return nombre_actividad;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public void setNombre_actividad(String nombre_actividad) {
-        this.nombre_actividad = nombre_actividad;
+    public int getCodigo() {
+        return codigo;
     }
 
-    public int getEstado() {
-        return estado;
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
-    public void setEstado(int estado) {
-        this.estado = estado;
+    public Timestamp getFecha() {
+        return fecha;
     }
 
-    public int getCantidad_horas() {
-        return cantidad_horas;
+    public void setFecha(Timestamp fecha) {
+        this.fecha = fecha;
     }
-
-    public void setCantidad_horas(int cantidad_horas) {
-        this.cantidad_horas = cantidad_horas;
-    }
-
-    
-	public void finalize() throws Throwable {
-
-	}
-
-	public void validarHorario(){
-
-	}
-
 }
